@@ -1,0 +1,23 @@
+——Commands——
+git log : 			Lists the commit history
+git log —stat : 		Provides additional info on commits
+git diff commit1 commit2 : 	Compares two commits
+git clone : 			Creates a local copy of the online Git repository
+git checkout : 			Allows you to view a specific commit
+
+——diff——
+Viewing a diff between two files helps identifying areas where a new bug may
+have been introduced.
+
+——Manual Commits——
+By committing manually instead of automatically, you can decide what to commit and when.
+This gives the opportunity to split the commits based on functionality. 
+By committing manually you can specify commit messages describing what has changed, instead of only showing an auto commit.
+
+——Multi-File Commits——
+Multi-file commits are useful when files are related to each other.
+"Normal" documents seldom have relations, so those are not needed. In source code, files will have lots of relations. So having multi-file commits is an essential feature.
+
+——Uses of Git——
+I would find Git useful for working on the source code of a team project.
+

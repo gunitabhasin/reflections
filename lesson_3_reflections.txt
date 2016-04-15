@@ -1,0 +1,17 @@
+——Commands——
+git remote :			Shows all remote locations for the repository
+git remote -v :			Provides more detail on the remote locations
+git remote add origin url : 	Adds a new remote location for the Github repository with the link “url”
+git push origin master : 	Pushes the master branch to the remote location origin
+git pull origin master : 	Gets the master branch from the remote location origin
+git fetch origin : 		Gets the changes from remote location into the origin/master branch
+
+——When to Use a Remote Repository——
+
+——Manual vs. Automatic Pull——
+
+——Forks, Clones and Branches——
+
+——Collaboration Using Github——
+
+——When to Use a Separate Branch——

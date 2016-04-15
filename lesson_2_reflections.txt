@@ -1,13 +1,31 @@
+——Commands——
+git add : 					Add a file to the staging area
+git commit : 					Commit the file from the staging area to the branch
+git status : 					Shows files in the staging area and those in the working directory that are not part of the repository
+git diff : 					Compares the working directory to the staging area
+git diff —staged : 				Compare the staging area with the repository
+git reset —hard : 				Undo all changes
+git checkout master : 				Selects the master branch
+git log —graph —oneline branch1 branch2 : 	Shows a visual representation of commit history within different branches
+git checkout -b new_branch : 			Creates a new branch and checks it out	
+git merge branch1 branch2 : 			Merges branch2 into branch1
+git branch -d branch_name :			Removes the branch with the specified name
+git show commitId : 				Shows the changes made in this commit
+
+——Initialising Repositories——
 When you initialise a new repository, git creates a master branch with zero initial commits. You need to do this so that you can then add files to your master branch.
 
-The staging area differs from the working directory because it is a temporary place where you can add commits before confirming them. This offers the value of allowing you to edit changes before committing.
+——Staging Area——
+The staging area differs from the working directory because it is a temporary place where you can add commits before confirming them. This offers the value of allowing you to add/remove changes before committing them to a repository. In other words, the staging area allows you to decide whether a file should be part of the commit or not. You can therefore use the staging area to ensure you have only one commit per logical change.
 
-You can use the staging area to ensure you have only one commit per change because this enables you to monitor the difference between changes and commit each change one by one.
+——Branches——
+Branches are helpful when you want to make multiple versions of your document available to use (eg. English version, Italian version, experimental version). They are also helpful whenever you are moving on to a new feature or new piece of work. You may have an experimental/unique feature branch which you keep separate from your production-quality branch. You might also use branches to keep features organised when you have multiple collaborators.
 
-Branches are helpful when you want to make multiple versions of your document available to use (eg. English version, Italian version, experimental version). They are also helpful whenever you are moving on to a new feature or new piece of work. You may have an experimental/unique feature branch and your production-quality branch. You might also use branches to keep features organised when you have multiple collaborators.
-
+——Branch Diagrams——
 Diagrams help you visualise the branch structure by showing you which commits are on each branch. You can use this information to help you navigate between branches, edit commits, and see which branches are reachable.
 
+——Merging Branches——
 When you merge two branches together you get a combined branch that includes all of the history of the previous commits. You would use the merge command to combine work that was done by different users on the end file.
 
+——Pros and Cons of Automatic Merging——
 The pros of Git’s automatic merging is that it can merge two branches where it is clear what changes are to be kept. It is helpful that Git does not automatically merge branches where there is a conflict; this is because it enables the user to decide which changes he/she would like to keep on both branches. The obvious downside to this is that it can involve manually looking through all changes, which can be time consuming. However, Git makes this process easier for us by clearing identifying where the merge conflict exists.
