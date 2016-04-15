@@ -5,19 +5,18 @@ git diff commit1 commit2 : 	Compares two commits
 git clone : 			Creates a local copy of the online Git repository
 git checkout : 			Allows you to view a specific commit
 
-——diff——
-Viewing a diff between two files helps identifying areas where a new bug may
-have been introduced.
+——Viewing the diff——
+Using the “git diff” command helps identifying areas where a new bug may have been introduced because it indicates what changes have been made between one commit and another.
+
+——File History——
+Having access to this can make you a better programmer as it will enable you to more efficiently make changes to your source code.
 
 ——Manual Commits——
-By committing manually instead of automatically, you can decide what to commit and when.
-This gives the opportunity to split the commits based on functionality. 
-By committing manually you can specify commit messages describing what has changed, instead of only showing an auto commit.
+By committing manually instead of automatically, you have the advantage of being able to decide what to commit and when. This allows you to have more control over the commits and therefore choose logical points at which to commit changes.
 
-——Multi-File Commits——
-Multi-file commits are useful when files are related to each other.
-"Normal" documents seldom have relations, so those are not needed. In source code, files will have lots of relations. So having multi-file commits is an essential feature.
+——Multiple Files per Commit——
+Github probably allows us to save multiple files in one commit because all the files are related to each other and are part of one project. This functionality is useful for programming, and it differs from GoogleDocs which treats each document as its own ‘project’.
 
 ——Uses of Git——
-I would find Git useful for working on the source code of a team project.
+I would find Git useful for working on the source code of my team project.
 
