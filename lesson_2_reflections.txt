@@ -1,0 +1,3 @@
+When you initialise a new repository, git creates a master branch with zero initial commits. You need to do this so that you can then add files to your master branch.
+
+The staging area differs from the working directory because it is a temporary place where you can add commits before confirming them. This offers the value of allowing you to edit changes before committing.
