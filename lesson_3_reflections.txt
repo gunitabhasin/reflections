@@ -7,6 +7,7 @@ git pull origin master : 	Gets the master branch from the remote location origin
 git fetch origin : 		Gets the changes from remote location into the origin/master branch
 
 ——When to Use a Remote Repository——
+It is helpful to use a remote repository when you have multiple people collaborating locally on a project and want to maintain a master version of the project online. This way, each individual can have their local version of the repository with the master source code published in the remote repository.
 
 ——Manual vs. Automatic Pull——
 
