@@ -10,6 +10,7 @@ git fetch origin : 		Gets the changes from remote location into the origin/maste
 It is helpful to use a remote repository when you have multiple people collaborating locally on a project and want to maintain a master version of the project online. This way, each individual can have their local version of the repository with the master source code published in the remote repository.
 
 ——Manual vs. Automatic Pull——
+You might want to always pull changes manually from the remote to your local repository because there could be multiple contributors to the remote who are editing the code at once. If this is the case, then an automatic pull would be quite confusing because there would be multiple modifications to the original repository, from various contributors, while you are trying to edit a different feature on your local version of the repository.
 
 ——Forks, Clones and Branches——
 
