@@ -4,7 +4,7 @@ git remote -v :			Provides more detail on the remote locations
 git remote add origin url : 	Adds a new remote location for the Github repository with the link “url”
 git push origin master : 	Pushes the master branch from your local drive to the remote location on Github
 git pull origin master : 	Gets the master branch from the remote location on Github and puts it on to your local drive
-git fetch origin : 		Gets the changes from remote location into the origin/master branch
+git fetch origin : 		Updates the local copy of the remote Github branch (origin/master) while keeping the local copy of your changes to the fork in a separate branch (master). ie. this command merges the changes from remote location into your computer’s local origin/master branch
 
 ——When to Use a Remote Repository——
 It is helpful to use a remote repository when you have multiple people collaborating locally on a project and want to maintain a master version of the project online. This way, each individual can have their local version of the repository with the master source code published in the remote repository.
@@ -13,7 +13,26 @@ It is helpful to use a remote repository when you have multiple people collabora
 You might want to always pull changes manually from the remote to your local repository because there could be multiple contributors to the remote who are editing the code at once. If this is the case, then an automatic pull would be quite confusing because there would be multiple modifications to the original repository, from various contributors, while you are trying to edit a different feature on your local version of the repository.
 
 ——Forks, Clones and Branches——
+Forking allows you to clone another person’s repository on Github to your repository on Github, without having to download any of the source code locally. Effectively, a fork is a clone that Github makes for you on its own website. The difference is that Github keeps track of the number of Forks that have been made off your original repository. The reason that forks are used is because users may not have permission to change the original repository that is being forked from.
+
+Cloning involves taking an existing repository and making one like it (either locally or on Github). Note that a clone of a repository from Github to Github is called a ‘fork’.
+
+Branches are created on a single repository.
+
+——Local Copies of Remote Branches——
+It can be beneficial to keep a copy of the last known state of the remote stored locally because this way you can restore any previous commits that you may have overwritten in error. This can also be helpful if you want to receive feedback on a change you are making before you push to the remote. 
 
 ——Collaboration Using Github——
+Github can be a useful tool for allowing multiple contributors to collaborate on changes to the original repository. If you want feedback on a change before you merge it into the remote, it is helpful to first create a new branch and check this out. Make the changes locally, add, commit, and push this branch on to your Github repository. Then, you can make a pull request (asking the contributor to merge new branch into the master on the remote repository).
+
+Thanks to Github, multiple contributors can collaborate more easily by keeping their version of changes to the source code separate and merging this into a main file only when appropriate. This would be much harder without Github as version-control systems such as Google Docs would not necessarily maintain separate branches or allow you to fork a repository. However, one could argue that Github makes collaboration quite complex by using lingo for branches, forks, clones and so on; perhaps a more intuitive process for collaborating will be developed soon.
+
+Note: While git is the local command-line environment, Github is the online collaboration community. Github has helped improve the open-source community by creating an online place where people can work on an idea.
 
 ——When to Use a Separate Branch——
+The workflow when making changes in a separate branch is a lot more complicated than working directly on a master because you need to follow the following steps:
+	1) Pull the change into your local master branch
+	2) Merge the local master into your branch
+	3) Push your branch to the remote 
+	4) Merge your branch into the master
+It is typically beneficial to use a separate branch when you have multiple collaborators, with each person working on a separate feature that will need to be reviewed before combining into the ultimate source file. 
